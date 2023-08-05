@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+html {
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  position: relative;
+  margin-top: 50px;
+  max-width: 250px !important;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #36474f;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.thm-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  margin-top: 80px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  padding: 0 15px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
+  padding: 21px;
+}
+
+button {
+  background: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.operator-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equal {
+  background-color: #ff6531 !important;
+  color: white !important;
+}
+
+.history {
+  position: absolute;
+  width: 100%;
+  height: 306px !important;
+  bottom: 0px;
+  height: fit-content;
+  background-color: #000;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+}
+.light .history{
+  background-color: #e3e2e2;
+}
+.history h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.history p {
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.close {
+  position: absolute;
+  bottom: 30px;
+  left: 32px;
+}
+
+
+.hide{
+  display: none;
+}
+
+/* Light Theme */
+.light {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.light .buttons {
+  background-color: #e3e2e2;
+  color: black;
+}
+.light .buttons button {
+  color: black;
+}
+
+.light .operator-btn {
+  color: #000;
+}
+
+/* Dark Theme */
+.dark {
+  background: #36474f;
+  color: #fff;
+}
+
+.dark .buttons {
+  background-color: #000;
+}
+
+.dark .operator-btn {
+  background: #ffff;
+  color: #000;
+}
+
+.theme-toggle {
+  background-color: transparent;
+}
+
+.light-btn {
+  color: white;
+}
+
+.night-btn {
+  color: black;
+}
